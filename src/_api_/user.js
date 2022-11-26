@@ -7,7 +7,7 @@ const axios = require('axios');
 
 const getUsers = async () => {
   try {
-    const response = await axios.get('https://gct-ac-api.herokuapp.com/userdetails');
+    const response = await axios.get('https://express-vercel-rho-ecru.vercel.app/userdetails');
     const resp = await response;
     console.log(resp.data);
     const res = [...resp.data].map((_, index) => ({

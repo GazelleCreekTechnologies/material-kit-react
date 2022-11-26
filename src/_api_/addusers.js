@@ -19,7 +19,7 @@ var userObject = {
 }
 const addUsers = async ({userObject}) => {
   try {
-    const response = await axios.post('https://gct-ac-api.herokuapp.com/registeruser',{userObject});
+    const response = await axios.post('https://express-vercel-rho-ecru.vercel.app/registeruser',{userObject});
 
     // var sql = `INSERT INTO UserTbl
     // (tenantID, lastName, firstName, email, occupation, online, tagID, hours, temperature, gender, ethnicity, accessType, status, username, password, biometricID, faceID) VALUES 
