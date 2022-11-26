@@ -54,7 +54,7 @@ export default function RegisterForm() {
 
   const addUsers = async (userObject) => {
     try {
-      const response = await axios.post('https://gct-ac-api.herokuapp.com/registeruser',userObject,{
+      const response = await axios.post('https://express-vercel-rho-ecru.vercel.app/registeruser',userObject,{
         mode: 'cors',
         headers: headers
     });
